@@ -21,17 +21,17 @@ Body and header font -
 <div class="drawer">
   
   <div class="box-30 text-center">
-    <p><span style="font-weight: 400; font-size: 3.998em;">Aa</span><br><small style="font-weight:400">400px</small></p>
+    <p><span style="font-size: 3.998em;">Aa</span><br><small>400px</small></p>
   </div>
   <div class="box-70 vertical-center">
-    <p style="font-weight: 400">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
+    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
   </div>
 
   <div class="box-30 text-center">
-    <p><span style="font-weight: 600; font-size: 3.998em;">Aa</span><br><small style="font-weight:600">600px</small></p>
+    <p><span style="font-size: 3.998em;">Aa</span><br><small>700px</small></p>
   </div>
   <div class="box-70 vertical-center">
-    <p style="font-weight: 600">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
+    <p style="font-weight: 700">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
   </div>
 
 </div>
