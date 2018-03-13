@@ -1,0 +1,550 @@
+/*
+** =========================
+** space-case v0.05A
+** created by jmacthefatcat
+** =========================
+*/
+
+/* Import line for Roboto font by Google */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
+
+/* SOME BASICS
+- The little things.
+- Body font size is set to 62.5% which equals 10px so when using REM's you know that 1.4rem = 14px, 1.8rem = 18px, etc.
+- Body font size also changes depending on window size (which is broken into four categories)
+  Small: 768px Medium: 1024px Large: 1920px Extra-Large: 1921px +
+- Everything is designed mobile first
+- Height 100% on html is to help with height percentage issues on things like a header depending where you have it in your code
+*/
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.6em;
+  color: #64677A;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  transition: font-size 0.4s;
+  /*Uncomment the line below if you are having height issues with child elements using percentages */
+  /*min-height: 100%*/
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  body {
+    font-size: 2.2em;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  background-color: #f0f0f2;
+  border: none;
+  display: block;
+  height: 1px;
+  margin: 1rem 0;
+}
+
+code {
+  font-family: monospace;
+  background-color: #f0f0f2;
+  border-radius: .4em;
+  padding: 0.2em 0.4em;
+  font-weight: 400;
+  white-space: nowrap;
+  margin: 0 0.1em;
+}
+
+pre>code {
+  display: block;
+  white-space: pre-wrap;
+  border-left: .4rem solid #4DC6F2;
+  border-radius: 0;
+  margin: 1em 0;
+  padding: 1em 1.5em;
+  font-size: 0.8em;
+}
+
+blockquote {
+  border-left: 0.4rem solid #4DC6F2;
+  padding: 0.5em 1em;
+  font-style: italic;
+  font-family: Georgia;
+}
+
+/* TYPOGRAPHY
+- H1-H6, paragraphing styling, etc
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #434A54;
+  transition: font-size 0.4s;
+}
+
+h1, .h1 {
+  font-size: 3.998em;
+}
+
+h2, .h2 {
+  font-size: 2.827em;
+}
+
+h3, .h3 {
+  font-size: 1.999em;
+}
+
+h4, .h4 {
+  font-size: 1.414em;
+}
+
+h5, .h5 {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: .02em;
+  font-weight: 400;
+}
+
+h6, .h6 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8em;
+  letter-spacing: .02em;
+}
+
+small, .small {
+  font-size: 0.707em;
+}
+
+p:first-of-type {
+  margin-top: 1em;
+}
+
+p:last-of-type {
+  margin-bottom: 1.5em;
+}
+
+p {
+  margin-bottom: 0.8em;
+}
+
+mark {
+  background-color: #EBF8B8;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+em, i {
+  font-style: italic;
+}
+
+/* LINKS
+- Some basic styling for nicer looking links
+*/
+
+a {
+  transition: color 0.4s, border-bottom 0.4s;
+  color: #265C83;
+  text-decoration: none;
+  border-bottom: 0.1rem solid transparent;
+}
+
+a:link, a:visited {
+  color: #41A7CC;
+}
+
+a:hover {
+  color: #4DC6F2;
+  border-bottom: 0.1rem solid #4DC6F2;
+}
+
+a:active {
+  transition: color .3s;
+  color: #007BE6;
+}
+
+/* GRID
+- Container is the big box that holds your small box(es) together
+- Drawer(s) are the row(s) that organize your content (if needed)
+- Box(es) are used to hold your content
+*/
+
+.container {
+  margin: 0 auto;
+  max-width: 96rem;
+  padding: 0 1em;
+  position: relative;
+  width: 100%;
+}
+
+.drawer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  min-width: 100%;
+  margin: 1em 0;
+}
+
+@media screen and (min-width: 768px) {
+  .drawer {
+    flex-flow: row wrap;
+  }
+}
+
+.box, .box-10, .box-20, .box-25, .box-30, .box-33, .box-40, .box-50, .box-60, .box-66, .box-70, .box-75, .box-80, .box-90, .box-100 {
+  padding: 0.5em 1em;
+  flex: 1 1 100%;
+}
+
+@media screen and (min-width:768px) {
+  .box {
+    flex: 1 1 auto;
+  }
+  .box-10 {
+    flex: 1 1 10%;
+    max-width: 10%;
+  }
+  .box-20 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .box-25 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .box-30 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .box-33 {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+  .box-40 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .box-50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .box-60 {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  .box-66 {
+    flex: 0 0 66%;
+    max-width: 66%;
+  }
+  .box-70 {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  .box-75 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .box-80 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .box-90 {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+  .box-100 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* BUTTONS
+- Biased button styles, but much more fitting than the default styles.
+- Seems like a lot, but really it's just to make sure that the different type of buttons all look the same
+*/
+
+.button, button, input[type='button'], input[type='reset'], input[type='submit'] {
+  color: #FCFCFF;
+  font-size: .85em;
+  background-color: #64677A;
+  border: 0.1rem solid #64677A;
+  border-radius: .2rem;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 3.8rem;
+  padding: 0 2rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  white-space: nowrap;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+a.button {
+  color: #FCFCFF;
+}
+
+.button:focus, .button:hover, button:focus, button:hover, input[type='button']:focus, input[type='button']:hover, input[type='submit']:focus, input[type='submit']:hover, input[type='reset']:focus, input[type='reset']:hover {
+  color: #FCFCFF;
+  background-color: #37CA6E;
+  border-color: #37CA6E;
+  outline: 0;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+.button[disabled], button[disabled], input[type='button'][disabled], input[type='reset'][disabled], input[type='submit'][disabled] {
+  cursor: default;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+input[type='reset']:focus, input[type='reset']:hover, .button[disabled]:focus, .button[disabled]:hover, button[disabled]:focus, button[disabled]:hover, input[type='button'][disabled]:focus, input[type='button'][disabled]:hover, input[type='reset'][disabled]:focus, input[type='reset'][disabled]:hover, input[type='submit'][disabled]:focus, input[type='submit'][disabled]:hover {
+  background-color: #FF3F49;
+  border-color: #FF3F49;
+}
+
+/* FORMS
+- Same mentality as Buttons, striped down then given a clean style
+- Forms include all your input fields
+*/
+
+form {
+  width: 100%;
+}
+
+fieldset {
+  border: 0;
+  min-width: 100%;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 1.3em;
+  color: #454754;
+}
+
+label {
+  font-weight: 700;
+  display: block;
+  width: 100%;
+}
+
+input[type='email'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='url'], input[type='date'], input[type='name'], textarea, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 0.1rem solid #64677A;
+  border-radius: .2rem;
+  box-shadow: none;
+  box-sizing: inherit;
+  height: 3.8rem;
+  padding: .6rem 1.0rem;
+  width: 100%;
+  font-size: 0.85em;
+  font-family: inherit;
+  color: inherit;
+}
+
+input[type='email']:hover, input[type='number']:hover, input[type='password']:hover, input[type='search']:hover, input[type='tel']:hover, input[type='text']:hover, input[type='url']:hover, input[type='date']:hover, input[type='name']:hover, textarea:hover, select:hover {
+  border: 0.1rem solid #41A7CC;
+  color: #454754;
+  outline: 0;
+  transition: border 0.4s, color 0.4s;
+}
+
+input[type='email']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, input[type='date']:focus, input[type='name']:focus, textarea:focus, select:focus {
+  border: 0.1rem solid #4DC6F2;
+  color: #454754;
+  outline: 0;
+}
+
+input[type='email'][disabled], input[type='number'][disabled], input[type='password'][disabled], input[type='search'][disabled], input[type='tel'][disabled], input[type='text'][disabled], input[type='url'][disabled], input[type='date'][disabled], input[type='name'][disabled], textarea[disabled], select[disabled] {
+  opacity: 0.5;
+}
+
+input[type='email'][disabled]:focus, input[type='number'][disabled]:focus, input[type='password'][disabled]:focus, input[type='search'][disabled]:focus, input[type='tel'][disabled]:focus, input[type='text'][disabled]:focus, input[type='url'][disabled]:focus, input[type='date'][disabled]:focus, input[type='name'][disabled]:focus, input[type='email'][disabled]:hover, input[type='number'][disabled]:hover, input[type='password'][disabled]:hover, input[type='search'][disabled]:hover, input[type='tel'][disabled]:hover, input[type='text'][disabled]:hover, input[type='url'][disabled]:hover, input[type='date'][disabled]:hover, input[type='name'][disabled]:hover, textarea[disabled]:focus, select[disabled]:focus, textarea[disabled]:hover, select[disabled]:hover {
+  border: 0.1rem solid #FF3F49;
+}
+
+input[type='radio'], input[type='checkbox'] {
+  width: 1em;
+  height: 1em;
+  margin: 0 1em;
+}
+
+textarea, textarea[type='text'] {
+  min-height: 10em;
+}
+
+/* TABLES
+- Cleaned up and styled fairly simply
+- Every other table row has a light grey background-size
+- Light border around cells
+*/
+
+table {
+  width: 100%;
+  margin: 1em auto;
+}
+
+thead {
+  border-bottom: 0.1rem solid #F0F0F2;
+}
+
+th {
+  padding: .2em 1em;
+}
+
+tr {
+  border-bottom: 0.1rem solid #F0F0F2;
+}
+
+td {
+  padding: .5em 1em;
+  border-left: 0.1rem solid #F0F0F2;
+  border-right: 0.1rem solid #F0F0F2;
+  font-size: 85%;
+}
+
+tr:nth-child(even) {
+  background-color: #FCFCFF;
+}
+
+td:first-child, th:first-child {
+  border-left: 0 solid transparent;
+}
+
+td:last-child, th:last-child {
+  border-right: 0 solid transparent;
+}
+
+tfoot tr {
+  border-bottom: 0;
+}
+
+/* LISTS
+- minireset.css strips all styling from the lists, then I've added a couple touches here to make them a lil' prettier.
+*/
+
+ul, dl, ol {
+  font-size: 1em;
+}
+
+li, dt, dd {
+  padding: 0.5rem;
+}
+
+li > p {
+  margin: 0!important;
+}
+
+dd {
+  margin-left: 1em;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+dd:before {
+  content: "- ";
+}
+
+dl dl, dl ol, dl ul, ol dl, ol ol, ol ul, ul dl, ul ol, ul ul {
+  font-size: 0.85em;
+  margin: .5rem 0 .5rem 3rem;
+}
+
+/* UTILITIES
+- Quick classes to modify things like text alignment, content placement, etc
+*/
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.horizontal-center {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: center;
+}
+
+.vertical-center {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+}
+
+.center-center {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-left {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: flex-start;
+}
+
+.align-right {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: flex-end;
+}
+
+.full-100 {
+  width: 100%;
+}
+
+.max-100 {
+  max-width: 100%;
+}

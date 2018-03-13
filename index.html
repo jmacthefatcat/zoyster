@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<main class="container">
+  <div class="drawer">
+    {% assign items = site.docs | sort: 'order' %}
+    {% for doc in items %}
+    <section class="box-100">
+      {{ doc.content }}
+    </section>
+    {% endfor %}
+  </div>
+</main>

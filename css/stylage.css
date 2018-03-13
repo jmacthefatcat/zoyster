@@ -1,0 +1,63 @@
+@import url("https://use.typekit.net/uct1kmd.css");
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+body {
+  font-family: "usual", sans-serif;
+  font-weight: 400;
+  background-color: #fdf8e8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 6600;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+a {
+  color: #50C1E9;
+  cursor: pointer;
+}
+
+a:link, a:visited {
+  color: #50C1E9;
+}
+
+a:hover {
+  color: #40BA92;
+  border-bottom: 0.1rem solid #40BA92;
+}
+
+.site-title {
+  font-family: "Righteous", sans-serif;
+  font-size: 3.998em;
+  color: #40BA92;
+}
+
+h1.site-title {
+  text-transform: uppercase;
+}
+
+.colour-swatch {
+  min-height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.colour-swatch-split {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  border-radius: 15px 0 0 015px;
+}
+
+.colour-swatch-split:nth-child(2) {
+  border-radius: 0 15px 15px 0;
+}
+
+.colour-info {
+  text-transform: uppercase;
+}
