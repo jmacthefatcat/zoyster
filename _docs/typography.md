@@ -16,7 +16,7 @@ Logo font -
 
 
 Body and header font -
-### Gibson
+### Aktiv Grotesk
 
 <div class="drawer">
 
