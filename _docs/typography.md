@@ -28,7 +28,7 @@ Body and header font -
   </div>
 
   <div class="box-30 text-center">
-    <p><span style="font-size: 3.998em;">Aa</span><br><small>700px</small></p>
+    <p><span style="font-size: 3.998em; font-weight: 700;">Aa</span><br><small>700px</small></p>
   </div>
   <div class="box-70 vertical-center">
     <p style="font-weight: 700">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
