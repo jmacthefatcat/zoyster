@@ -7,6 +7,7 @@ order: 3
 
 Logo font -
 ### Righteous
+<https://fonts.google.com/specimen/Righteous>
 
 <div class="drawer">
   <div class="box text-center">
@@ -17,9 +18,10 @@ Logo font -
 
 Body and header font -
 ### Aktiv Grotesk
+<https://www.daltonmaag.com/library/aktiv-grotesk>
 
 <div class="drawer">
-  
+
   <div class="box-30 text-center">
     <p><span style="font-size: 3.998em;">Aa</span><br><small>400px</small></p>
   </div>

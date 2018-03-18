@@ -5,7 +5,8 @@ order: 2
 
 ## Colours
 
-**Brand -** *To be used when representing ZO*  
+### Brand
+These colours are what I use when I really want to represent zo, especially items that would be unique to the brand, so in logos, any header that may contain the name, or little things like link colours.
 
 <div class="drawer horizontal-center">
   <div class="box-30">
@@ -39,7 +40,8 @@ order: 2
   </div>
 </div>
 
-**Basic -** *Used for when brand colours wouldn't make sense/cause confusion and other basic UI needs*  
+### Basic
+These colours I use for many projects really, it's just a nice set of options for various needs.
 
 <div class="drawer horizontal-center">
   <div class="box-30">

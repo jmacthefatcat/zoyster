@@ -2,17 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
 body {
-  font-family: "canada-type-gibson", sans-serif;
-  font-weight: 400;
+  font-family: "aktiv-grotesk", sans-serif;
   background-color: #fdf8e8;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 6600;
-}
-
-b, strong {
-  font-weight: 600;
 }
 
 a {
@@ -37,6 +28,21 @@ a:hover {
 
 h1.site-title {
   text-transform: uppercase;
+}
+
+.stamp-dark, .stamp-green {
+  text-transform: uppercase;
+  display: inline-block;
+  color: #F5F7FA;
+  padding: 0.25em 0.5em;
+}
+
+.stamp-green {
+  background-color: #40BA92;
+}
+
+.stamp-dark {
+  background-color: #27313B;
 }
 
 .colour-swatch {
