@@ -17,8 +17,8 @@ Logo font -
 
 
 Body and header font -
-### Aktiv Grotesk
-<https://www.daltonmaag.com/library/aktiv-grotesk>
+### Acumin Pro
+<https://acumin.typekit.com/>
 
 <div class="drawer">
 
