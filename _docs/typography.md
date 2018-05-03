@@ -7,7 +7,6 @@ order: 3
 
 Logo font -
 ### Righteous
-<https://fonts.google.com/specimen/Righteous>
 
 <div class="drawer">
   <div class="box text-center">
@@ -17,8 +16,7 @@ Logo font -
 
 
 Body and header font -
-### Acumin Pro
-<https://acumin.typekit.com/>
+### Nimbus Sans
 
 <div class="drawer">
 

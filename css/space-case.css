@@ -1,13 +1,9 @@
 /*
 ** =========================
-** space-case v0.05A
+** space-case v1.0A
 ** created by jmacthefatcat
 ** =========================
 */
-
-/* Import line for Roboto font by Google */
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
 
 /* SOME BASICS
 - The little things.
@@ -24,7 +20,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: sans-serif;
   font-size: 1.6em;
   color: #64677A;
   font-weight: 400;
@@ -77,15 +73,20 @@ code {
 
 pre>code {
   display: block;
-  white-space: pre-wrap;
   border-left: .4rem solid #4DC6F2;
   border-radius: 0;
   margin: 1em 0;
   padding: 1em 1.5em;
   font-size: 0.8em;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
 }
 
 /* Prevents code block text from being too small */
+
 @media screen and (max-width: 768px) {
   pre>code {
     font-size: 0.95em;
@@ -104,7 +105,7 @@ blockquote {
 */
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 400;
   color: #434A54;
   transition: font-size 0.4s;
 }
@@ -144,6 +145,7 @@ small, .small {
 }
 
 /* Prevents small text from neing too small */
+
 @media screen and (max-width: 768px) {
   small, .small {
     font-size: 0.85em;
@@ -167,7 +169,7 @@ mark {
 }
 
 b, strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 em, i {
@@ -476,8 +478,8 @@ li, dt, dd {
   padding: 0.5rem;
 }
 
-li > p {
-  margin: 0!important;
+li>p {
+  margin: 0 !important;
 }
 
 dd {
@@ -527,6 +529,16 @@ dl dl, dl ol, dl ul, ol dl, ol ol, ol ul, ul dl, ul ol, ul ul {
   display: -webkit-flex;
   align-items: center;
   justify-content: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
 }
 
 .align-left {
