@@ -1,6 +1,5 @@
 @import url("https://use.typekit.net/uct1kmd.css");
 @import url('https://fonts.googleapis.com/css?family=Righteous');
-
 body {
   font-family: "nimbus-sans", sans-serif;
   background-color: #fdf8e8;
@@ -9,6 +8,10 @@ body {
 a {
   color: #50C1E9;
   cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 700;
 }
 
 a:link, a:visited {
