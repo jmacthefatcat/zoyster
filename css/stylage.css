@@ -1,7 +1,8 @@
 @import url("https://use.typekit.net/uct1kmd.css");
 @import url('https://fonts.googleapis.com/css?family=Righteous');
+
 body {
-  font-family: "nimbus-sans", sans-serif;
+  font-family: old-roboto, sans-serif;
   background-color: #fdf8e8;
 }
 
