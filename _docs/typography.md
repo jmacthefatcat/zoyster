@@ -34,4 +34,11 @@ Body and header font -
     <p style="font-weight: 700">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
   </div>
 
+  <div class="box-30 text-center">
+    <p style="font-weight: 900;"><span style="font-size: 3.998em;">Aa</span><br><small>900px</small></p>
+  </div>
+  <div class="box-70 vertical-center">
+    <p style="font-weight: 900">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
+  </div>
+
 </div>
