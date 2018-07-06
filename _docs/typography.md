@@ -16,7 +16,7 @@ Logo font -
 
 
 Body and header font -
-### Roboto
+### Acumin Pro
 
 <div class="drawer">
 
@@ -35,10 +35,10 @@ Body and header font -
   </div>
 
   <div class="box-30 text-center">
-    <p style="font-weight: 900;"><span style="font-size: 3.998em;">Aa</span><br><small>900px</small></p>
+    <p style="font-weight: 800;"><span style="font-size: 3.998em;">Aa</span><br><small>800px</small></p>
   </div>
   <div class="box-70 vertical-center">
-    <p style="font-weight: 900">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
+    <p style="font-weight: 800">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
   </div>
 
 </div>
