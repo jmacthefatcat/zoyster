@@ -1,48 +1,35 @@
-@import url("https://use.typekit.net/uct1kmd.css");
-@import url('https://fonts.googleapis.com/css?family=Righteous');
-
 body {
-  font-family: "aktiv-grotesk", sans-serif;
-  background-color: #fdf8e8;
+  background-color: #F5F5ED;
 }
 
-a {
-  color: #50C1E9;
-  cursor: pointer;
+hr {
+  background-color: #454754;
+  height: 0.2rem;
+  margin: 0.25em 0;
 }
 
-a:link, a:visited {
-  color: #50C1E9;
+.table-of-contents {
+  padding-left: 1em;
 }
 
-a:hover {
-  color: #40BA92;
-  border-bottom: 0.1rem solid #40BA92;
+.table-of-contents-item:link, .table-of-contents-item:visited {
+  color: #454754;
 }
 
-.site-title {
-  font-family: "Righteous", sans-serif;
-  font-size: 3.998em;
-  color: #40BA92;
+.table-of-contents-item>li {
+  transition: color 0.2s, background-color 0.2s;
 }
-
-h1.site-title {
-  text-transform: uppercase;
-}
-
-.stamp-dark, .stamp-green {
-  text-transform: uppercase;
-  display: inline-block;
-  color: #F5F7FA;
-  padding: 0.25em 0.5em;
-}
-
-.stamp-green {
+.table-of-contents-item:hover>li {
   background-color: #40BA92;
+  color: #F5F7FA;
 }
 
-.stamp-dark {
-  background-color: #27313B;
+.css-tag {
+  background-color: #454754;
+  color: #F5F7Fa;
+  font-size: 0.8em;
+  padding: 0.2em 0.4em;
+  letter-spacing: 0.05em;
 }
 
 .colour-swatch {

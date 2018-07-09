@@ -16,29 +16,29 @@ Logo font -
 
 
 Body and header font -
-### Acumin Pro
+### Gibson
 
 <div class="drawer">
 
+<div class="box-30 text-center">
+  <p style="font-weight: 300;"><span style="font-size: 3.998em;">Aa</span><br><small>300px</small></p>
+</div>
+<div class="box-70 vertical-center">
+  <p style="font-weight: 300">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
+</div>
+
   <div class="box-30 text-center">
-    <p><span style="font-size: 3.998em;">Aa</span><br><small>400px</small></p>
+    <p style="font-weight: 400;"><span style="font-size: 3.998em;">Aa</span><br><small>400px</small></p>
   </div>
   <div class="box-70 vertical-center">
-    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
+    <p style="font-weight: 400">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
   </div>
 
   <div class="box-30 text-center">
-    <p style="font-weight: 700;"><span style="font-size: 3.998em;">Aa</span><br><small>700px</small></p>
+    <p style="font-weight: 600;"><span style="font-size: 3.998em;">Aa</span><br><small>600px</small></p>
   </div>
   <div class="box-70 vertical-center">
-    <p style="font-weight: 700">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
-  </div>
-
-  <div class="box-30 text-center">
-    <p style="font-weight: 800;"><span style="font-size: 3.998em;">Aa</span><br><small>800px</small></p>
-  </div>
-  <div class="box-70 vertical-center">
-    <p style="font-weight: 800">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
+    <p style="font-weight: 600">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890!@#$%^&(){}[]</p>
   </div>
 
 </div>

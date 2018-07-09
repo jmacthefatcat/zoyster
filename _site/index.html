@@ -13,7 +13,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
-  <link rel="stylesheet" type="text/css" href="css/space-case.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/jmacthefatcat/space-case@v1.0-alpha/css/space-case.css">
+  <link rel="stylesheet" type="text/css" href="https://use.typekit.net/uct1kmd.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Righteous">
+  <link rel="stylesheet" type="text/css" href="css/zoyster.css">
   <link rel="stylesheet" type="text/css" href="css/stylage.css">
 
   <!--[if IE]>
@@ -38,16 +41,97 @@
 
         <main class="container">
   <div class="drawer">
-    
+  
+    <section class="box-100">
+      <h3>Table of contents</h3>
+      <hr>
+      <ol class="table-of-contents">
+        
+        <a class="table-of-contents-item" href="#welcome"><li>Welcome</li></a>
+        
+        <a class="table-of-contents-item" href="#stamps"><li>Stamps</li></a>
+        
+        <a class="table-of-contents-item" href="#logo"><li>Logo</li></a>
+        
+        <a class="table-of-contents-item" href="#colours"><li>Colours</li></a>
+        
+        <a class="table-of-contents-item" href="#typography"><li>Typography</li></a>
+        
+      </ol>
+    </section>
     
     <section class="box-100">
       <h2 id="what-is-zoyster">What is zoyster?</h2>
 
-<p>It’s a style guide, it plans to hit puberty sooner or later but, for now it’s fairly bare.</p>
+<p>It’s a style guide that plans to hit puberty sooner or later, but for now it’s fairly bare.</p>
 
 <p>It’s in the same vein as my project <a href="https://jmacthefatcat.github.io/space-case">space-case</a>, where it mainly serves as practice, a way to exercise and develop skill sets. So <strong>zoyster</strong> will slowly blossom with various styles and methodologies that I wish to use when I create anything that represents my personal work, which usually goes under the moniker <a href="http://zerooctave.ca">zero octave</a>.</p>
 
 <p>As for the name? I just like saying it.</p>
+
+    </section>
+    
+    <section class="box-100">
+      <h2 id="stamps">Stamps</h2>
+
+<p><em>css classes</em><br />
+<span class="stamp-small stamp-dark">.stamp-small</span>
+<span class="stamp-small stamp-dark">.stamp</span>
+<span class="stamp-small stamp-dark">.stamp-dark</span>
+<span class="stamp-small stamp-dark">.stamp-green</span></p>
+
+<p>Stamps can be used on things like headlines, tags, logos, or whatever your heart desires. To use them, you need a combo of two classes. The size class, which is either <code class="highlighter-rouge">stamp</code> which creates a nice box based on the text inside the stamp or <code class="highlighter-rouge">stamp-small</code> which drops the size down to 80% of the body text size, then the background colour class, which is either <code class="highlighter-rouge">stamp-dark</code> for a basic dark background or <code class="highlighter-rouge">stamp-green</code> for the zo colour ocean green. Below are some examples:</p>
+
+<div class="box center-center">
+  <span class="site-title stamp stamp-green">zero octave</span>
+</div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span class="site-title stamp stamp-green"&gt;zero octave&lt;/span&gt;
+</code></pre></div></div>
+
+<div class="box center-center">
+  <span class="h3 stamp stamp-dark">HP Lovecraft signs a record deal</span>
+</div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span class="h3 stamp stamp-dark"&gt;HP Lovecraft signs a record deal&lt;/span&gt;
+</code></pre></div></div>
+
+<div class="drawer">
+
+  <div class="box-50">
+    <span class="h3">Green Tags</span><br />
+    <span class="stamp-small stamp-green">#example</span>
+    <span class="stamp-small stamp-green">#hot2trot</span>
+    <span class="stamp-small stamp-green">#party-flava</span>
+    <span class="stamp-small stamp-green">#branding</span>
+    <span class="stamp-small stamp-green">#diyer</span>
+  </div>
+
+  <div class="box-50">
+    <span class="h3">Grey Tags</span><br />
+    <span class="stamp-small stamp-dark">#example</span>
+    <span class="stamp-small stamp-dark">#hibiscus</span>
+    <span class="stamp-small stamp-dark">#fluffincurls</span>
+    <span class="stamp-small stamp-dark">#so-dark</span>
+    <span class="stamp-small stamp-dark">#so-quick</span>
+  </div>
+  
+</div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span class="h3"&gt;Green Tags&lt;/span&gt;&lt;br&gt;
+&lt;span class="stamp-small stamp-green"&gt;#example&lt;/span&gt;
+&lt;span class="stamp-small stamp-green"&gt;#hot2trot&lt;/span&gt;
+&lt;span class="stamp-small stamp-green"&gt;#party-flava&lt;/span&gt;
+&lt;span class="stamp-small stamp-green"&gt;#branding&lt;/span&gt;
+&lt;span class="stamp-small stamp-green"&gt;#diyer&lt;/span&gt;
+
+&lt;span class="h3"&gt;Grey Tags&lt;/span&gt;&lt;br&gt;
+&lt;span class="stamp-small stamp-dark"&gt;#example&lt;/span&gt;
+&lt;span class="stamp-small stamp-dark"&gt;#hibiscus&lt;/span&gt;
+&lt;span class="stamp-small stamp-dark"&gt;#fluffincurls&lt;/span&gt;
+&lt;span class="stamp-small stamp-dark"&gt;#so-dark&lt;/span&gt;
+&lt;span class="stamp-small stamp-dark"&gt;#so-quick&lt;/span&gt;
+</code></pre></div></div>
 
     </section>
     
@@ -187,7 +271,6 @@
 
 <p>Logo font -</p>
 <h3 id="righteous">Righteous</h3>
-<p><a href="https://fonts.google.com/specimen/Righteous">https://fonts.google.com/specimen/Righteous</a></p>
 
 <div class="drawer">
   <div class="box text-center">
@@ -196,23 +279,29 @@
 </div>
 
 <p>Body and header font -</p>
-<h3 id="aktiv-grotesk">Aktiv Grotesk</h3>
-<p><a href="https://www.daltonmaag.com/library/aktiv-grotesk">https://www.daltonmaag.com/library/aktiv-grotesk</a></p>
+<h3 id="gibson">Gibson</h3>
 
 <div class="drawer">
 
+<div class="box-30 text-center">
+  <p style="font-weight: 300;"><span style="font-size: 3.998em;">Aa</span><br /><small>300px</small></p>
+</div>
+<div class="box-70 vertical-center">
+  <p style="font-weight: 300">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />abcdefghijklmnopqrstuvwxyz<br />1234567890!@#$%^&amp;(){}[]</p>
+</div>
+
   <div class="box-30 text-center">
-    <p><span style="font-size: 3.998em;">Aa</span><br /><small>400px</small></p>
+    <p style="font-weight: 400;"><span style="font-size: 3.998em;">Aa</span><br /><small>400px</small></p>
   </div>
   <div class="box-70 vertical-center">
-    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />abcdefghijklmnopqrstuvwxyz<br />1234567890!@#$%^&amp;(){}[]</p>
+    <p style="font-weight: 400">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />abcdefghijklmnopqrstuvwxyz<br />1234567890!@#$%^&amp;(){}[]</p>
   </div>
 
   <div class="box-30 text-center">
-    <p style="font-weight: 700;"><span style="font-size: 3.998em;">Aa</span><br /><small>700px</small></p>
+    <p style="font-weight: 600;"><span style="font-size: 3.998em;">Aa</span><br /><small>600px</small></p>
   </div>
   <div class="box-70 vertical-center">
-    <p style="font-weight: 700">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />abcdefghijklmnopqrstuvwxyz<br />1234567890!@#$%^&amp;(){}[]</p>
+    <p style="font-weight: 600">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />abcdefghijklmnopqrstuvwxyz<br />1234567890!@#$%^&amp;(){}[]</p>
   </div>
 
 </div>

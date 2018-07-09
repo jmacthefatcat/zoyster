@@ -4,7 +4,16 @@ layout: default
 
 <main class="container">
   <div class="drawer">
-    {% assign items = site.docs | sort: 'order' %}
+  {% assign items = site.docs | sort: 'order' %}
+    <section class="box-100">
+      <h3>Table of contents</h3>
+      <hr>
+      <ol class="table-of-contents">
+        {% for doc in items %}
+        <a class="table-of-contents-item" href="#{{ doc.title }}"><li>{{ doc.title | capitalize }}</li></a>
+        {% endfor %}
+      </ol>
+    </section>
     {% for doc in items %}
     <section class="box-100">
       {{ doc.content }}
