@@ -1,5 +1,5 @@
 body {
-  font-family: canada-type-gibson, Arial, Helvetica, sans-serif;
+  font-family: canada-type-gibson, "Arial Nova", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 a {
@@ -19,10 +19,6 @@ h4, h5, h6, .h4, .h5, .h6 {
   font-weight: 400;
 }
 
-a:link, a:visited {
-  color: #50C1E9;
-}
-
 a:hover {
   color: #40BA92;
   border-bottom: 0.1rem solid #40BA92;
@@ -31,15 +27,11 @@ a:hover {
 .site-title {
   text-transform: uppercase;
   font-family: "Righteous", sans-serif;
-  font-size: 3.998em;
-  color: #40BA92;
 }
 
 .site-title-lower-case {
   text-transform: none;
   font-family: "Righteous", sans-serif;
-  font-size: 3.998em;
-  color: #40BA92;
 }
 
 .stamp-small {
