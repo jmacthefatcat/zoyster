@@ -1,0 +1,83 @@
+@font-face {
+  font-family: old-roboto;
+  src: url(type/Old-Roboto-Thin.WOFF);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: old-roboto;
+  src: url(type/Old-Roboto-Thin-Italic.WOFF);
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: old-roboto;
+  src: url(type/Old-Roboto-Light.WOFF);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: old-roboto;
+  src: url(type/Old-Roboto-Light-Italic.WOFF);
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: old-roboto;
+  src: url(type/Old-Roboto-Regular.WOFF);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: old-roboto;
+  src: url(type/Old-Roboto-Regular-Italic.WOFF);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: old-roboto;
+  src: url(type/Old-Roboto-Medium.WOFF);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: old-roboto;
+  src: url(type/Old-Roboto-Medium-Italic.WOFF);
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: old-roboto;
+  src: url(type/Old-Roboto-Bold.WOFF);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: old-roboto;
+  src: url(type/Old-Roboto-Bold-Italic.WOFF);
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: old-roboto;
+  src: url(type/Old-Roboto-Black.WOFF);
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: old-roboto;
+  src: url(type/Old-Roboto-Black-Italic.WOFF);
+  font-weight: 900;
+  font-style: italic;
+}

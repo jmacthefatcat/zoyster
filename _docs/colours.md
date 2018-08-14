@@ -1,12 +1,12 @@
 ---
 title: colours
-order: 2
+order: 3
 ---
 
 ## Colours
 
 ### Brand
-These colours are what I use when I really want to represent zo, especially items that would be unique to the brand, so in logos, any header that may contain the name, or little things like link colours.
+Colours mainly used in association with personal/zero octave stuff.
 
 <div class="drawer horizontal-center">
   <div class="box-30">
@@ -41,7 +41,7 @@ These colours are what I use when I really want to represent zo, especially item
 </div>
 
 ### Basic
-These colours I use for many projects really, it's just a nice set of options for various needs.
+These colours I use for many projects, it's a nice set of options for various needs.
 
 <div class="drawer horizontal-center">
   <div class="box-30">
